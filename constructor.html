@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor method </title>
+</head>
+<body>
+   <script>
+    class Student {
+
+        //constructor method
+        constructor(rollNo,sname, divison){
+            this.rollNo = rollNo;
+            this.sname = sname;
+            this.divison = divison;
+
+        }
+
+        // to display details of students
+        displayDetails(){
+            document.write(this.rollNo + ' ' + this.sname + ' ' + this.divison + '<br>' )
+        }
+    }
+
+    var s1 = new Student('11', 'John', 'A');
+    var s2 = new Student('12', 'Jim','B');
+    s1.displayDetails(); // calling method on object s1
+    s2.displayDetails(); // calling method on pbject s2
+   </script> 
+</body>
+</html>

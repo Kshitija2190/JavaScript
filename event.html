@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript events</title>
+    <script src="./events.js"></script>
+    <script>
+        document.getElementById("btn").addEventListener("click", fun());
+        
+
+    </script>
+</head>
+
+<body onresize = "fun2()">
+    <div id="bg" ></div>
+    <form>
+        <input type="button" onclick="clickevent()" value="Who's this?" />
+    </form>
+    <p onmouseover="mouseoverevent()"> Keep cursor over me</p>
+    <input type="text" id="input1" onfocus="focusevent()" />
+    <p> Example of the addEventListener() method. </p>
+    <p> Click the following button to see the effect. </p>
+    <button id="btn"> Click me </button>
+    <p id="para"></p>
+    <h1 id="heading" ondblclick="fun1()"> Hello world :):) </h1>
+    <h2> Double Click the text "Hello world" to see the effect. </h2>
+    <p> This is an example of using the <b> ondblclick </b> attribute. </p>
+
+</body>
+
+</html>
+
+<div id="">
+    <p id=""></p>
+</div>
+
+bubbling child => parent innermost => outermost
+capturing parent => child outermost => innermost

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Method in Javascript</title>
+</head>
+<body>
+    <script>
+    class Demo {
+
+        constructor() {
+            document.write(Demo.display());
+            document.write(this.constructor.display())
+        }
+        //static method
+        static display(){
+           return ('This is a static method' +"<br>");
+        }
+    }
+
+    var t = new Demo();
+
+   // invoke a static method
+    //Demo.display();
+</script>
+</body>
+</html>

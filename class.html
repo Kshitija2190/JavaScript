@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in Javascript</title>
+</head>
+<body>
+    <script>  
+        //Declaring class  
+        class Employee  
+          {  
+        //Initializing an object  
+            constructor(id,name,department)  
+            {  
+              this.id=id;  
+              this.name=name;
+              this.department = department;
+
+            }  
+        //Declaring method  
+            detail()  
+            {  
+          document.writeln(this.id+" "+this.name+ " " + this.department+ "<br>")  
+            }  
+
+            description() {
+                document.write("We are into description");
+            }
+          }  
+        //passing object to a variable   
+        var e1=new Employee(101,"Martin Roy","Science");  
+        var e2=new Employee(102,"Duke William","Maths");  
+        e1.detail(); //calling method  
+        e2.detail();
+        e2.description(); 
+   
+        </script>  
+         
+</body>
+</html>

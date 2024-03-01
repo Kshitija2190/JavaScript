@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Javascript</title>
+</head>
+<body>
+   <script>
+    function Employee(first,last){
+        this.first = first;
+        this.last = last;
+
+    }
+    Employee.prototype.fullName = function() {
+        return document.write(this.first + " " + this.last);
+    }
+
+    Employee.prototype.company = 'Google';
+
+    var e1 = new Employee('Tom', 'David');
+    e1.fullName();
+    console.log(e1);
+    document.write(e1.company);
+    console.log(e1.company);
+   </script> 
+</body>
+</html>

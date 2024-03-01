@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Abstract in Javascript</title>
+</head>
+
+<body>
+    <script>
+      class  Vehicle {
+            constructor() {
+                this.company = 'Honda'
+            }
+        }
+        class Bike  extends Vehicle{
+            constructor(name) {
+                super();
+                this.name = name;
+            }
+        }
+
+        var b1 = new Bike('XYZ');
+        document.writeln(b1.name + ' ' + b1.company)
+    </script>
+</body>
+
+</html>

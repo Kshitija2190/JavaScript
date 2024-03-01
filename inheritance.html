@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance in Javascript</title>
+</head>
+<body>
+    <script>
+        class Bike {
+            constructor(){
+                this.company = 'Honda';
+            }
+
+        }
+        class Vehicle extends Bike {
+            constructor(name, price){
+                super();
+                this.name = name;
+                this.price = price;
+            }
+        }
+        var v1 = new Vehicle('Sparkling','70000');
+        document.write(v1.name + ' ' + v1.price + ' ' + v1.company);
+    </script>
+</body>
+</html>
