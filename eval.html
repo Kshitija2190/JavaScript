@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eval Expression</title>
+</head>
+
+<body>
+    <script>
+
+        var a = 10, b = 20, c = 30;
+        document.write(eval(a + b + c) + "<br/>");
+        document.write(eval(a * b * c) + "<br/>");
+        document.write(eval(a + b / c) + "<br/>");
+
+        var res;
+
+        function fun(a, b) {
+            return a * b;
+        }
+
+        eval("res = fun(50, 50);");
+        document.write(res);
+
+        var x = 0;
+        var str = (x == 0) ? 'SUNDAY' : 'MONDAY';
+
+        document.write('The output is : ', str);
+        var str = '({"fname" : "Harry", "lname" : "Rickman"})';
+
+        var obj = eval(str);
+
+        document.write(obj.fname + " " + obj.lname + "<br/>");
+        "use strict";
+       
+        document.write(x);
+        x = 10;
+        var x;
+       
+        function sum(a, a) {
+            "use strict";
+            return a + a;
+        }
+        console.log(sum(10, 20));
+
+
+    </script>
+
+</body>
+
+</html>
