@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure In JavaScript</title>
+</head>
+
+<body>
+    <script>
+        function fun() {
+            var a = 4; // 'a' is the local variable, created by the fun()  
+            function innerfun() // the innerfun() is the inner function, or a closure  
+            {
+                return a;
+            }
+            return innerfun;
+        }
+        var output = fun();
+        document.write(output());
+        document.write(" ");
+        document.write(output());
+        function fun1(a)  
+        {  
+        function innerfun1(b){  
+        return a*b;  
+        }  
+        return innerfun1;  
+        }  
+        var output1 = fun1(4);  
+        document.write(output1(4));  
+        document.write(" ");  
+        document.write(output1(5));  
+        </script>  
+        
+</body>
+
+</html>
